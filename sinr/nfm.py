@@ -22,7 +22,7 @@ def get_nfm_embeddings(G, vector, compute_np=False, merge=False):
 
     """
     logger.info("Starting NFM")
-    adjacency = nk.algebraic.adjacencyMatrix(G, matrixType='sparse')  # Extract the adjacency matrix of the graph
+    adjacency = nk.algebraic.adjacencyMatrix(G, matrixType='sparse')  # Extract the adjacency matrix of the  graph
     membership_matrix = get_membership(vector)  # Word-Community membership matrix
 
     node_recall = compute_NR(adjacency, membership_matrix)
