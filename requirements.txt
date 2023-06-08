@@ -12,3 +12,4 @@ tqdm==4.65.0
 sphinx
 sphinx_tabs
 sphinx_rtd_theme
+ghp-import
