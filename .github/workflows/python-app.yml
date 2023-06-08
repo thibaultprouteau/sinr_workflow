@@ -36,6 +36,9 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest
       run: |
-        python -m sinr.tests.test_sinr_nfm
-        python -m sinr.tests.test_sinr_workflow
+        pip install pytest-runner
+        python build.py pytest
+        python build.py pytest --addopts
+        pytest
+
         
