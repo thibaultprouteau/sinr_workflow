@@ -3,7 +3,7 @@ SINr
 =====
 |languages| |downloads| |license| |version| |cpython| |wheel| |python| |docs| |activity| |contributors| |quality| |build|
 
-*SINr* is an open-source tool to efficiently compute graph and word
+*SINr* yo is an open-source tool to efficiently compute graph and word
 embeddings. Its aim is to provide sparse interpretable vectors from a
 graph structure. The dimensions of the vector produced are related to
 the community structure detected in the graph. By leveraging the
