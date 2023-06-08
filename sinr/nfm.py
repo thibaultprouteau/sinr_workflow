@@ -7,7 +7,7 @@ from .logger import logger
 
 
 def get_nfm_embeddings(G, vector, compute_np=False, merge=False):
-    """Compute the Node F-Measure metrics to build the embedding matrix using the graph and community structure detected.
+    """Compu the Node F-Measure metrics to build the embedding matrix using the graph and community structure detected.
 
     :param G: Graph on which to compute the embeddings
     :type G: networkit.Graph
