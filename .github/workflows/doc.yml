@@ -38,8 +38,8 @@ jobs:
         run: |
           cd docs/
           make html clean
-          sphinx-apidoc -o source .. -f
-          make html
+          sphinx-apidoc -o source ../sinr -f -e -M
+          sphinx-build -d _build/doctrees source _build/html
       - name: Run ghp-import
         run: |
           ghp-import -n -p -f docs/_build/html
