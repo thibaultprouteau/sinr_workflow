@@ -1,8 +1,18 @@
-SINr Core
+sinr package
 ============
 
+Subpackages
+-----------
 
-Graph Embeddings
+.. toctree::
+   :maxdepth: 4
+
+   sinr.text
+
+Submodules
+----------
+
+sinr.graph\_embeddings module
 -----------------------------
 
 .. automodule:: sinr.graph_embeddings
@@ -10,7 +20,15 @@ Graph Embeddings
    :undoc-members:
    :show-inheritance:
 
-SINr NFM
+sinr.logger module
+------------------
+
+.. automodule:: sinr.logger
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sinr.nfm module
 ---------------
 
 .. automodule:: sinr.nfm
@@ -18,7 +36,7 @@ SINr NFM
    :undoc-members:
    :show-inheritance:
 
-Loader
+sinr.strategy\_loader module
 ----------------------------
 
 .. automodule:: sinr.strategy_loader
@@ -26,18 +44,10 @@ Loader
    :undoc-members:
    :show-inheritance:
 
-Visualization
+sinr.viz module
 ---------------
 
 .. automodule:: sinr.viz
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Logger
-------------------
-
-.. automodule:: sinr.logger
    :members:
    :undoc-members:
    :show-inheritance:

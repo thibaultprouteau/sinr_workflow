@@ -1,8 +1,10 @@
-SINr Text
-##########
+sinr.text package
+=================
 
+Submodules
+----------
 
-Co-occurrence
+sinr.text.cooccurrence module
 -----------------------------
 
 .. automodule:: sinr.text.cooccurrence
@@ -10,7 +12,7 @@ Co-occurrence
    :undoc-members:
    :show-inheritance:
 
-Co-occurrence Cython
+sinr.text.cooccurrence\_cython module
 -------------------------------------
 
 .. automodule:: sinr.text.cooccurrence_cython
@@ -18,7 +20,7 @@ Co-occurrence Cython
    :undoc-members:
    :show-inheritance:
 
-PMI Filtering
+sinr.text.pmi module
 --------------------
 
 .. automodule:: sinr.text.pmi
@@ -26,7 +28,7 @@ PMI Filtering
    :undoc-members:
    :show-inheritance:
 
-Preprocess Text
+sinr.text.preprocess module
 ---------------------------
 
 .. automodule:: sinr.text.preprocess

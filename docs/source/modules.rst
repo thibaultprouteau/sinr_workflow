@@ -1,10 +1,10 @@
-===============
-SINr Embeddings
-===============
+sinr_workflow
+=============
 
 .. toctree::
-   :maxdepth: 6
+   :maxdepth: 4
 
+   build
    sinr
-   sinr.text
-   sinr.tests
+   test
+   tests
