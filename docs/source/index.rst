@@ -8,8 +8,6 @@ Welcome to SINr's documentation!
 
 |languages| |downloads| |license| |version| |cpython| |wheel| |python| |docs| |activity| |contributors| |quality| |build|
 
-
-
 .. toctree::
    :maxdepth: 4
    :caption: Contents:
