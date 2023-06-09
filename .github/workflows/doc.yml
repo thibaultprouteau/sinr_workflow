@@ -37,7 +37,5 @@ jobs:
       - name: Build HTML
         run: |
           cd docs/
-          make html
-      - name: Run ghp-import
-        run: |
-          ghp-import -n -p -f docs/_build/html
+          make html clean
+          sphinx-build -d build/doctrees source build/html
