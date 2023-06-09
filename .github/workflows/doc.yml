@@ -38,4 +38,4 @@ jobs:
         run: |
           cd docs/
           make html clean
-          sphinx-build -d build/doctrees source build/html
+          sphinx-apidoc -o docs
