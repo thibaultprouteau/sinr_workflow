@@ -11,5 +11,6 @@ spacy==3.5.3
 tqdm==4.65.0
 sphinx
 sphinx_tabs
+sphinx.ext.autodoc
 sphinx_rtd_theme
 ghp-import
