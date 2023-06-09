@@ -39,4 +39,5 @@ jobs:
           cd docs/
           make html clean
           sphinx-apidoc -o source .. -f
-          sphinx-build -d build/doctrees source _build
+          sphinx-build -d build/doctrees source build
+          make html
