@@ -35,11 +35,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Build HTML
+      # sphinx-build -d _build/doctrees source _build/html
         run: |
           cd docs/
-          make html clean
           sphinx-apidoc -o source ../sinr -f -e -M
-          sphinx-build -d _build/doctrees source _build/html
+          make html
       - name: Run ghp-import
         run: |
           ghp-import -n -p -f docs/_build/html
