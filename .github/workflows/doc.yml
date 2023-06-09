@@ -40,3 +40,7 @@ jobs:
           make html clean
           sphinx-apidoc -o source .. -f
           make html
+      - name: Run ghp-import
+        run: |
+          ghp-import -n -p -f docs/_build/html
+          
