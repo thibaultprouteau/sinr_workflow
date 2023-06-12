@@ -1042,7 +1042,7 @@ class SINrVectors(object):
         return vector
     
     def light_model_save(self):
-        """SAVE a minimal version of the model that is readable as a `dict` for evaluation on `word-embeddings-benchmark`
+        """Save a minimal version of the model that is readable as a `dict` for evaluation on `word-embeddings-benchmark`
         https://github.com/kudkudak/word-embeddings-benchmarks
 
 
