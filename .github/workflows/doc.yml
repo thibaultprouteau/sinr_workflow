@@ -38,10 +38,12 @@ jobs:
       # sphinx-build -d _build/doctrees source _build/html
         run: |
           cd docs/
-          sphinx-apidoc -o source ../sinr -f
+          # output : source, module : ../sinr, overwrite existing files
+          # don't create headings for modules/packages
+          sphinx-apidoc -o source ../sinr -f -E
           make html
       - name: Run ghp-import
         run: |
           cd docs/
-          ghp-import -n -p _build
+          ghp-import -n -p -f  _build
           
