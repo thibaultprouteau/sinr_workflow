@@ -38,7 +38,7 @@ jobs:
       # sphinx-build -d _build/doctrees source _build/html
         run: |
           cd docs/
-          sphinx-apidoc -o source ../sinr -f -e -M
+          sphinx-apidoc -o source ../sinr -f
           make html
       - name: Run ghp-import
         run: |
