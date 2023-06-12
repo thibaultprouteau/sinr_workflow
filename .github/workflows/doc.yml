@@ -44,6 +44,5 @@ jobs:
           make html
       - name: Run ghp-import
         run: |
-          cd docs/
-          ghp-import -n -p -f  _build
+          ghp-import -n -p -f  docs/_build/
           
