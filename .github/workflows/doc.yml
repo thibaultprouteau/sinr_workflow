@@ -39,8 +39,7 @@ jobs:
         run: |
           cd docs/
           # output : source, module : ../sinr, overwrite existing files
-          # don't create headings for modules/packages
-          sphinx-apidoc -o source ../sinr -f -E
+          sphinx-apidoc -o source ../sinr -f
           make html
       - name: Run ghp-import
         run: |
