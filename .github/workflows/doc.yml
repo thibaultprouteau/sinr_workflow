@@ -35,7 +35,7 @@ jobs:
       - name: Build documentation
         run: |
           cd docs/
-          poetry run sphinx-build -b html . _build
+          poetry run sphinx-build -b html source _build
           touch .nojekyll     
       - name: Deploy documentation
         if: ${{ github.event_name == 'push' }}
