@@ -1,4 +1,5 @@
 Cython==0.29.35
+sinr==1.1.1
 matplotlib==3.7.1
 networkit==9.1.1
 networkx==3.1
