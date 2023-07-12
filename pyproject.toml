@@ -53,7 +53,7 @@ matplotlib = "^3.7.0"
 spacy = "^3.5.0"
 
 [tool.poetry.extras]
-docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon", "sphinx-tabs"]
 
 
 [tool.poetry.group.dev.dependencies]
