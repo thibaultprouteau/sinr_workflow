@@ -35,7 +35,7 @@ jobs:
       - name: Build documentation
         run: |
           cd docs/
-          poetry run sphinx-build -b html source _build
+          poetry run sphinx-build -b html source _build/html
       - name: Run ghp-import
         run: |
           pip install ghp-import
