@@ -34,15 +34,8 @@ jobs:
         run: poetry install --extras docs
       - name: Build documentation
         run: |
-          mkdir gh-pages
-          touch gh-pages/.nojekyll
           cd docs/
           poetry run sphinx-build -b html source _build
-          cp -r _build/* ../gh-pages/
-      - name: Deploy documentation
-        if: ${{ github.event_name == 'push' }}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: gh-pages
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
+      - name: Run ghp-import
+        run: |
+          ghp-import -n -p -f docs/_build/html
