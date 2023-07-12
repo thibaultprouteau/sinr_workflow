@@ -38,9 +38,8 @@ jobs:
       # sphinx-build -d _build/doctrees source _build/html
         run: |
           cd docs/
-          # output : source, module : ../sinr, overwrite existing files
-          sphinx-apidoc -o source ../sinr -f
-          make html
+          #sphinx-apidoc -o source ../sinr -f
+          make clean html
       - name: Run ghp-import
         run: |
           ghp-import -n -p -f docs/_build/html
