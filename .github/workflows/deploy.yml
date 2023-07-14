@@ -6,6 +6,7 @@ on:
 
 jobs:
   deploy:
+    permissions: write-all
     runs-on: ubuntu-latest
     env:
       POETRY_VIRTUALENVS_CREATE: "false"
