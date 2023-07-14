@@ -47,5 +47,5 @@ jobs:
           git add pyproject.toml
           git add sinr/__init__.py
           git commit -m "Update SINr version based on release tag."
-          git push origin master
+          git push origin main
       # NOTE: Make sure you have added PYPI_API_TOKEN repository secret
