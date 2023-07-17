@@ -39,7 +39,11 @@ jobs:
         uses: devops-infra/action-commit-push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_prefix: "[AUTO-COMMIT] update release version"
+          add_timestamp: true
+          commit_prefix: "[AUTO-COMMIT] "
+          commit_message: "Update release version"
+          force: true
+          
       - name: Create pull request
         uses: devops-infra/action-pull-request@master
         with:
