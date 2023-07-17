@@ -42,8 +42,7 @@ jobs:
           add_timestamp: false
           target_branch: release/${{ github.event.release.tag_name }}
           commit_prefix: "[AUTO-COMMIT] "
-          commit_message: Update release version to ${{ github.event.release.tag_name }}.
-          force: true
+          commit_message: Update release version to ${{ github.event.release.tag_name }}
           
       - name: Create pull request
         uses: devops-infra/action-pull-request@master
