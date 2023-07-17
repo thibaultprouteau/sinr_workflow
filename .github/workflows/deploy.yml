@@ -42,14 +42,14 @@ jobs:
           add_timestamp: true
           target_branch: "release"
           commit_prefix: "[AUTO-COMMIT] "
-          commit_message: "Update release version"
+          commit_message: Update release version to ${{startsWith(github.ref, 'refs/tags/') }}
           force: true
           
       - name: Create pull request
         uses: devops-infra/action-pull-request@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          body: "**Automated pull request**<br><br>Updated release version"
+          body: Automated pull request<br><br>Updated release version to ${{startsWith(github.ref, 'refs/tags/') }}
           title: ${{ github.event.commits[0].message }}
           target_branch: "main"
           reviewer: "thibaultprouteau"
